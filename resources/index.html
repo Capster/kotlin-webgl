@@ -1,0 +1,38 @@
+<style>
+body {
+  margin: 0;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: #393939;
+}
+.container {
+    position: relative;
+}
+.debug {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+.crosshair {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+}
+.green {
+    background-color: lawngreen;
+}
+</style>
+<div class="container">
+    <canvas id="c"></canvas>
+    <div class="debug"></div>
+    <div class="crosshair"></div>
+</div>
+<script type="text/javascript" src="./lib/kotlin.js"></script>
+<script type="text/javascript" src="./webgl2-sandbox.js"></script>
